@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div><h1>Form</h1></div>
+    <div class="section">
+        <form id="myForm">
+            <h2>Registration</h2>
+            <div class="personal_details">
+                <h3>Personal Details</h3>
+                <div class="label-input-group">
+                    <div>
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" placeholder="Enter Your Name">
+                    </div>
+                    <div>
+                        <label for="dob">Date Of Birth</label>
+                        <input type="text" id="dob" placeholder="Enter Birth date">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter Your Email">
+                    </div>
+                </div>
+                <div class="label-input-group">
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter Mobile Number">
+                    </div>
+                    <div>
+                        <label for="gender">Gender</label>
+                        <input type="text" id="gender" placeholder="Enter Your Gender">
+                    </div>
+                    <div>
+                        <label for="occupation">Occupation</label>
+                        <input type="text" id="occupation" placeholder="Enter Your Occupation">
+                    </div>
+                </div>
+            </div>
+
+            <div class="identity_details">
+                <h3>Identity Details</h3>
+                <div class="label-input-group">
+                    <div>
+                        <label for="idtype">ID Type</label>
+                        <input type="text" id="idtype" placeholder="Enter ID Type">
+                    </div>
+                    <div>
+                        <label for="idnum">ID Number</label>
+                        <input type="text" id="idnum" placeholder="Enter ID Number">
+                    </div>
+                    <div>
+                        <label for="issueDep">Issue Authority</label>
+                        <input type="text" id="issueDep" placeholder="Enter Issue Department">
+                    </div>
+                </div>
+                <div class="label-input-group">
+                    <div>
+                        <label for="issuedate">Issue Date</label>
+                        <input type="text" id="issuedate" placeholder="Enter ID Issue Date">
+                    </div>
+                    <div>
+                        <label for="issuestate">Issue State</label>
+                        <input type="text" id="issuestate" placeholder="Enter ID Issue State">
+                    </div>
+                    <div>
+                        <label for="expiry">Expiry Date</label>
+                        <input type="text" id="expiry" placeholder="Enter ID Expiry Date">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="button-container">
+                <button type="button" onclick="submitForm()">Next <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <div id="formData"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
